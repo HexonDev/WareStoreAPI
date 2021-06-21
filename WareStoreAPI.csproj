@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UserSecretsId>2e6bf402-18f1-4fdd-ba64-acde27dff3c4</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Content Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210106230325_init.cs" />
+    <Compile Remove="Migrations\20210106230325_init.Designer.cs" />
+    <Compile Remove="Migrations\20210106232916_AddNullable.cs" />
+    <Compile Remove="Migrations\20210106232916_AddNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210106233121_AddNullable.cs" />
+    <Compile Remove="Migrations\20210106233121_AddNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210106233742_AddNullable.cs" />
+    <Compile Remove="Migrations\20210106233742_AddNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210106233829_AddNullable.cs" />
+    <Compile Remove="Migrations\20210106233829_AddNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210106233900_AddNullable.cs" />
+    <Compile Remove="Migrations\20210106233900_AddNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210107105506_Nullable.cs" />
+    <Compile Remove="Migrations\20210107105506_Nullable.Designer.cs" />
+    <Compile Remove="Migrations\20210107105627_Nullable.cs" />
+    <Compile Remove="Migrations\20210107105627_Nullable.Designer.cs" />
+    <Compile Remove="Migrations\20210107110343_test.cs" />
+    <Compile Remove="Migrations\20210107110343_test.Designer.cs" />
+    <Compile Remove="Migrations\20210107110759_addNullable.cs" />
+    <Compile Remove="Migrations\20210107110759_addNullable.Designer.cs" />
+    <Compile Remove="Migrations\20210107112045_Test.cs" />
+    <Compile Remove="Migrations\20210107112045_Test.Designer.cs" />
+    <Compile Remove="Migrations\20210107114632_rLL.cs" />
+    <Compile Remove="Migrations\20210107114632_rLL.Designer.cs" />
+    <Compile Remove="Migrations\20210107120000_init.cs" />
+    <Compile Remove="Migrations\20210107120000_init.Designer.cs" />
+    <Compile Remove="Migrations\20210107122810_RenameStorageIdToStockInStore.cs" />
+    <Compile Remove="Migrations\20210107122810_RenameStorageIdToStockInStore.Designer.cs" />
+    <Compile Remove="Migrations\20210107124359_AddAddressStringToAddress.cs" />
+    <Compile Remove="Migrations\20210107124359_AddAddressStringToAddress.Designer.cs" />
+    <Compile Remove="Migrations\20210107124901_RemoveStokFromStore.cs" />
+    <Compile Remove="Migrations\20210107124901_RemoveStokFromStore.Designer.cs" />
+    <Compile Remove="Migrations\20210117195406_AddStockToStore.cs" />
+    <Compile Remove="Migrations\20210117195406_AddStockToStore.Designer.cs" />
+    <Compile Remove="Migrations\20210117235823_Init.cs" />
+    <Compile Remove="Migrations\20210117235823_Init.Designer.cs" />
+    <Compile Remove="Migrations\20210117235950_Init.cs" />
+    <Compile Remove="Migrations\20210117235950_Init.Designer.cs" />
+    <Compile Remove="Migrations\20210311205134_updateAddressModel.cs" />
+    <Compile Remove="Migrations\20210311205134_updateAddressModel.Designer.cs" />
+    <Compile Remove="Migrations\20210311210335_updateAddressModel.cs" />
+    <Compile Remove="Migrations\20210311210335_updateAddressModel.Designer.cs" />
+    <Compile Remove="Migrations\20210311210808_updateAddressModel.cs" />
+    <Compile Remove="Migrations\20210311210808_updateAddressModel.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+
+</Project>
